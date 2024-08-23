@@ -1,5 +1,7 @@
 # Decentralized LLM Inference Runner
 
+
+
 This project aims to create a decentralized LLM (Large Language Model) inference system powered by and for users. The core concept is to split large LLM models into smaller parts that can fit within users' devices, all of which are interconnected through a peer-to-peer (P2P) network.
 
 One significant challenge with LLMs is that they can have hundreds of layers, requiring substantial memory to run locally. Most consumer devices today have around 16GB of memory, and running an 8-billion-parameter model typically consumes about 50% of that memory (8GB), not accounting for the operating system and other daily applications. Additionally, the model often remains idle. We address this by dividing the model into smaller parts, with each device handling only a small portion—ideally around 10%.
@@ -12,15 +14,16 @@ We have some thoughts on this: the closer the users are to each other, the more 
 
 For this reason, we believe that our shortest-chain routing technique can significantly optimize latency, especially when users are connected via LAN or are very close peers. By prioritizing these local connections, the system can reduce data transfer times and improve overall performance, making decentralized LLM inference more efficient and practical.
 
-## How It Works with Blockchain
+## Blockchain Usecase for payment
 
-Each device will have its own wallet or be linked to the user's wallet.
+We are still working on the solution for the blockchain usecase. The reason we use blockchain/crypto currency as the primary payment method is due to the decentralized nature of the ecosystem.
+Here are some thoughts:
+- Each device will have its own wallet or be linked to the user's wallet.
+- Devices can earn small rewards by staying active and serving other users' requests.
+- Users incur a cost for processing each request, which depends on the input and output tokens.
+- Whenever a user submits a request, it is secured by a chain of contributing devices through data hashes and signatures, providing proof of contribution.
 
-Devices earn small rewards by staying active and serving other users' requests.
-
-Users incur a cost for processing each request, which depends on the input and output tokens.
-
-Whenever a user submits a request, it is secured by a chain of contributing devices through data hashes and signatures, providing proof of contribution.
+Here Aptos would be a great choice for this usecase due to it's low transaction fee and performance. 
 
 ## Some thought about marketplace
 
