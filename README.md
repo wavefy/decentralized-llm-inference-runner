@@ -12,6 +12,22 @@ We have some thoughts on this: the closer the users are to each other, the more 
 
 For this reason, we believe that our shortest-chain routing technique can significantly optimize latency, especially when users are connected via LAN or are very close peers. By prioritizing these local connections, the system can reduce data transfer times and improve overall performance, making decentralized LLM inference more efficient and practical.
 
+## How It Works with Blockchain
+
+Each device will have its own wallet or be linked to the user's wallet.
+
+Devices earn small rewards by staying active and serving other users' requests.
+
+Users incur a cost for processing each request, which depends on the input and output tokens.
+
+Whenever a user submits a request, it is secured by a chain of contributing devices through data hashes and signatures, providing proof of contribution.
+
+## Some thought about marketplace
+
+Each node can set its desired cost for services, while users can specify the maximum cost they are willing to accept and their latency requirements. Based on these parameters, the network routes requests to the most suitable nodes.
+
+Users can add funds to their wallets to purchase more resources. They are free to use these resources internally or act as resellers, offering them to other Web2 or Web3 users.
+
 ## Visualization with a 60-Layer Model
 
 ![Architecture](./docs/architecture.excalidraw.png)
