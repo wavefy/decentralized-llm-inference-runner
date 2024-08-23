@@ -1,5 +1,7 @@
 # Decentralized LLM Inference Runner
 
+> [!NOTE]  
+> This project is still in development and will be fully open-source in a later date.
 
 
 This project aims to create a decentralized LLM (Large Language Model) inference system powered by and for users. The core concept is to split large LLM models into smaller parts that can fit within users' devices, all of which are interconnected through a peer-to-peer (P2P) network.
